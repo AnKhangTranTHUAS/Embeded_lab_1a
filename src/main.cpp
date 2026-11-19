@@ -5,7 +5,7 @@ int myFunction(int, int);
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  int result = 3;
 }
 
 void loop() {
@@ -16,3 +16,6 @@ void loop() {
 int myFunction(int x, int y) {
   return x + y;
 }
+
+// Lab 1a - GPIO Input/Output
+// Author: Your Name
