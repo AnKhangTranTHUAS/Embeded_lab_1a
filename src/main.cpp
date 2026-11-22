@@ -1,5 +1,6 @@
 #include <Arduino.h>
-
+// name: Tran An Khang
+// student number: 26090740
 
 #define LED_OUTPUT 23 
 #define BUTTON_INPUT 22
