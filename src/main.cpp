@@ -9,7 +9,7 @@ void setup(){
   pinMode(BUTTON_INPUT, INPUT_PULLDOWN);
 }
 
-void loop() {int buttonStatus = digitalRead(BUTTON_INPUT);
+void loop() {int buttonStatus = digitalRead(BUTTON_INPUT); //this should be placed after the setup() because the computer doesn't know what is "Button input"
   if(buttonStatus ==  1){
     digitalWrite(LED_OUTPUT, 1);
   }
