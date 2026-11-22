@@ -1,21 +1,19 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = 3;
+#define LED_OUTPUT 23 
+#define BUTTON_INPUT 22
+
+void setup(){
+  pinMode(LED_OUTPUT, OUTPUT);
+  pinMode(BUTTON_INPUT, INPUT_PULLDOWN);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop() {int buttonStatus = digitalRead(BUTTON_INPUT);
+  if(buttonStatus ==  1){
+    digitalWrite(LED_OUTPUT, 1);
+  }
+  else{
+    digitalWrite(LED_OUTPUT, 0);
+  }
 }
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
-
-// Lab 1a - GPIO Input/Output
-// Author: Your Name
