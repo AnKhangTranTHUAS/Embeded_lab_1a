@@ -12,9 +12,11 @@ void setup(){
 
 void loop() {int buttonStatus = digitalRead(BUTTON_INPUT); //this should be placed after the setup() because the computer doesn't know what is "Button input"
   if(buttonStatus ==  1){
+    delay(300);
     digitalWrite(LED_OUTPUT, 1);
   }
   else{
+    delay(300);
     digitalWrite(LED_OUTPUT, 0);
   }
 }
